@@ -6,7 +6,7 @@
 /*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 06:22:21 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/29 06:35:20 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/29 07:53:14 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_lstsize(t_list *lst)
 {
 	int		size;
-	
+
 	size = 0;
 	while (lst != NULL)
 	{

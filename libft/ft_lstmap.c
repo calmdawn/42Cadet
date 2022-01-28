@@ -6,7 +6,7 @@
 /*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/29 06:23:35 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/29 07:42:21 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/29 07:52:58 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*total_list;
 	t_list	*new_list;
 
-	if(lst == NULL || f == NULL)
+	if (lst == NULL || f == NULL)
 		return (NULL);
 	total_list = NULL;
 	while (lst != NULL)
