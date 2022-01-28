@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/23 00:34:48 by jucho             #+#    #+#             */
+/*   Updated: 2022/01/23 00:34:48 by jucho            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t len;
-	size_t idx;
+	size_t	len;
+	size_t	idx;
 
 	idx = 0;
 	len = ft_strlen(src);

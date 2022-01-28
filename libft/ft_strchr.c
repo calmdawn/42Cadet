@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 14:22:27 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/12 14:29:50 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/23 04:39:43 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *str, int ch)
+char	*ft_strchr(const char *str, int c)
 {
-	while (*str != "\0")
+	while (*str != '\0')
 	{
-		if (*str == ch)
-			return (str);
+		if (*str == (char)c)
+			return ((char *)str);
 		str++;
 	}
+	if (c == 0)
+		return ((char *)str);
 	return (0);
 }

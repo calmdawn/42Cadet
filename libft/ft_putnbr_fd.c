@@ -1,23 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/12 14:51:03 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/23 00:37:02 by jucho            ###   ########.fr       */
+/*   Created: 2022/01/23 04:12:04 by jucho             #+#    #+#             */
+/*   Updated: 2022/01/29 06:51:55 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	ft_number(int n, int fd)
 {
-	int	cnt;
+	char	ch;
 
-	cnt = 0;
-	while (str[cnt] != '\0')
-		cnt++;
-	return (cnt);
+	if (n < 10)
+	{
+		ch = n + '0';
+		write(fd, &ch, 1);
+	}
+	else
+	{
+		ft_number(n / 10, fd);
+		ft_number(n % 10, fd);
+	}
+}
+
+void	ft_putnbr_fd(int n, int fd)
+{
+	if (n == -2147483648)
+	{
+		write(fd, "-2147483648", 11);
+		return ;
+	}
+	if (n == 0)
+	{
+		write(fd, "0", 1);
+		return ;
+	}
+	else
+	{
+		if (n < 0)
+		{
+			n = -n;
+			write(fd, "-", 1);
+		}
+		ft_number(n, fd);
+	}
 }

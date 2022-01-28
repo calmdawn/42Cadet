@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 14:08:30 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/12 14:08:44 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/23 00:41:21 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int	ch)
+int	ft_isascii(int ch)
 {
-	if ('0' <= ch && ch <= "127")
+	if (0 <= ch && ch <= 127)
 		return (1);
 	else
 		return (0);

@@ -1,23 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/12 14:51:03 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/23 00:37:02 by jucho            ###   ########.fr       */
+/*   Created: 2022/01/23 04:09:52 by jucho             #+#    #+#             */
+/*   Updated: 2022/01/23 23:02:54 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int	cnt;
+	char	*str;
+	size_t	size;
 
-	cnt = 0;
-	while (str[cnt] != '\0')
-		cnt++;
-	return (cnt);
+	if (s == NULL)
+		return (NULL);
+	size = ft_strlen(s);
+	if (size < start)
+		size = 0;
+	else if (size - start <= len)
+		size = size - start;
+	else
+		size = len;
+	str = (char *)malloc(sizeof(char) * (size + 1));
+	if (str == NULL)
+		return (NULL);
+	str[size] = '\0';
+	if (size != 0)
+		ft_memcpy(str, &s[start], size);
+	return (str);
 }

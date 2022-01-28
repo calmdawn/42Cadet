@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 13:56:46 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/12 14:07:04 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/22 23:58:30 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int	ch)
+int	ft_isalnum(int ch)
 {
 	if ('A' <= ch && ch <= 'Z')
 		return (1);

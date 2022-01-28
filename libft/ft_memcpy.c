@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/23 00:30:52 by jucho             #+#    #+#             */
+/*   Updated: 2022/01/23 00:30:52 by jucho            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*dcpy;
+	unsigned char		*dcpy;
 	unsigned const char	*scpy;
-	size_t	idx;
+	size_t				idx;
 
 	dcpy = dst;
 	scpy = src;
@@ -16,6 +28,7 @@ void *ft_memcpy(void *dst, const void *src, size_t n)
 	while (idx < n)
 	{
 		dcpy[idx] = scpy[idx];
+		idx++;
 	}
 	return (dst);
 }

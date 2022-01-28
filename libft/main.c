@@ -1,4 +1,4 @@
-#include <ctype.h>
+#include "libft.h"
 #include <stdio.h>
 
 int	main(void)
@@ -15,6 +15,10 @@ int	main(void)
 
 	//	isprint
 
-	printf("%d \n", isprint(32));
-	printf("%d \n", isprint(34));
+	// printf("%d \n", isprint(32));
+	// printf("%d \n", isprint(34));
+
+	
+	printf("%d \n", (0 / 10));
+
 }

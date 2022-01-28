@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/23 00:32:35 by jucho             #+#    #+#             */
+/*   Updated: 2022/01/23 00:32:35 by jucho            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
-void	*memset(void *ptr, int value, size_t num)
+void	*ft_memset(void *ptr, int value, size_t num)
 {
-	unsigned char *uch;
-	size_t	idx;
+	unsigned char	*uch;
+	size_t			idx;
 
-	uch = (unsigned char)ptr;
+	uch = (unsigned char *)ptr;
 	idx = 0;
 	while (idx < num)
 	{

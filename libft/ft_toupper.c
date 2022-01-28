@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 13:54:04 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/12 13:54:29 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/23 04:23:39 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int	ch)
+int	ft_toupper(int c)
 {
-	if ('A' <= ch && ch <= 'Z')
-		return (1);
+	if ('a' <= c && c <= 'z')
+		return (c - 32);
 	else
-		return (0);
+		return (c);
 }

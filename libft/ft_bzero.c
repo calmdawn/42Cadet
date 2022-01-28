@@ -1,15 +1,24 @@
-#include <libft.h>
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/22 23:57:02 by jucho             #+#    #+#             */
+/*   Updated: 2022/01/22 23:57:02 by jucho            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
-	size_t	idx;
+	size_t			idx;
 
 	ptr = s;
 	idx = 0;
-	while (idx < n)		
+	while (idx < n)
 		ptr[idx++] = 0;
 }

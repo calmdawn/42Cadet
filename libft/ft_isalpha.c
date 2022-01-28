@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 13:39:58 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/12 14:07:47 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/23 00:28:15 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int	ch)
+int	ft_isalpha(int ch)
 {
 	if ('A' <= ch && ch <= 'Z')
 		return (1);
