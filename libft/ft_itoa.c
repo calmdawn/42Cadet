@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:10:52 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/24 04:18:06 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/29 16:49:32 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_len(int n)
+static int	get_len(int n)
 {
 	int	cnt;
 

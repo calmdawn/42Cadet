@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:12:04 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/29 06:51:55 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/29 16:49:40 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_number(int n, int fd)
+static void	ft_number(int n, int fd)
 {
 	char	ch;
 

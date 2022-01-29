@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:10:34 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/24 01:07:25 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/29 16:49:38 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_end(char const *s1, char const *set)
+static int	get_end(char const *s1, char const *set)
 {
 	int	end;
 	int	i;
@@ -29,7 +29,7 @@ int	get_end(char const *s1, char const *set)
 	return (-1);
 }
 
-int	get_start(char const *s1, char const *set)
+static int	get_start(char const *s1, char const *set)
 {
 	int	start;
 

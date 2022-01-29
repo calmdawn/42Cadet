@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:10:43 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/24 03:06:05 by jucho            ###   ########.fr       */
+/*   Updated: 2022/01/29 16:49:39 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_row_len(const char *s, char c)
+static int	get_row_len(const char *s, char c)
 {
 	int	cnt;
 	int	idx;
@@ -33,7 +33,7 @@ int	get_row_len(const char *s, char c)
 	return (cnt);
 }
 
-char	*set_split_word(const char *str, char c, int *s_idx, int *e_idx)
+static char	*set_split_word(const char *str, char c, int *s_idx, int *e_idx)
 {
 	char	*word;
 	int		idx;
@@ -59,7 +59,7 @@ char	*set_split_word(const char *str, char c, int *s_idx, int *e_idx)
 	return (word);
 }
 
-int	set_col(char **str_list, const char *s, char c, int row_len)
+static int	set_col(char **str_list, const char *s, char c, int row_len)
 {
 	int	row;
 	int	s_idx;
@@ -79,7 +79,7 @@ int	set_col(char **str_list, const char *s, char c, int row_len)
 	return (1);
 }
 
-char	**error_free(char **str_list)
+static char	**error_free(char **str_list)
 {
 	int	idx;
 
