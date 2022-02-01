@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	check_space(const char *str, int *idx)
+static void	check_space(const char *str, int *idx)
 {
 	while (str[*idx] == '\t' || str[*idx] == '\n'
 		|| str[*idx] == '\v' || str[*idx] == '\f'
@@ -20,7 +20,7 @@ void	check_space(const char *str, int *idx)
 	}
 }
 
-void	check_oper(const char *str, int *idx, int *neg_cnt)
+static void	check_oper(const char *str, int *idx, int *neg_cnt)
 {
 	if (str[*idx] == '-' || str[*idx] == '+')
 	{
