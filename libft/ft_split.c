@@ -6,7 +6,7 @@
 /*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:10:43 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/24 03:06:05 by jucho            ###   ########.fr       */
+/*   Updated: 2022/02/02 03:58:38 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,8 @@ char	**ft_split(char const *s, char c)
 	int		row_len;
 	int		result;
 
+	if (s == NULL)
+		return (NULL);
 	row_len = get_row_len(s, c);
 	str_list = (char **)malloc(sizeof(char *) * (row_len + 1));
 	if (str_list == NULL)

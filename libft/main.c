@@ -11,8 +11,7 @@ int	main(void)
 	//isascii
 	// printf("%d \n", isascii(0));
 	// printf("%d \n", isascii(-1));
-	// printf("%d \n", isascii(250));
-
+	// printf("%d \n", isascii(2
 	//	isprint
 
 	// printf("%d \n", isprint(32));

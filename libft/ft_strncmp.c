@@ -6,7 +6,7 @@
 /*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 15:51:58 by jucho             #+#    #+#             */
-/*   Updated: 2022/01/23 04:20:05 by jucho            ###   ########.fr       */
+/*   Updated: 2022/02/02 00:53:12 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 			break ;
 		idx++;
 	}
-	return (s1[idx] - s2[idx]);
+	return ((unsigned char)s1[idx] - (unsigned char)s2[idx]);
 }

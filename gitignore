@@ -1,2 +1,5 @@
 .vscode/
 .libftTester/
+.libft-unit-test/
+.libft-war-machine/
+.Libftest/
