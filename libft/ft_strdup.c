@@ -31,3 +31,5 @@ char	*ft_strdup(const char *s1)
 	str[idx] = '\0';
 	return (str);
 }
+
+// ft_strdup : s1 문자열을 복사한 후 그 위치를 반환하는 함수

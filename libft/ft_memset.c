@@ -26,3 +26,5 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (ptr);
 }
+
+// ft_memset : ptr 메모리 공간에 value 값으로 num 만큼 채움

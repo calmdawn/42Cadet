@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:10:15 by jucho             #+#    #+#             */
-/*   Updated: 2022/02/02 04:12:59 by jucho            ###   ########.fr       */
+/*   Updated: 2022/02/03 16:39:10 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[len1 + len2] = '\0';
 	return (str);
 }
+
+// ft_strjoin : s1 과 s2 문자열을 이어 붙인 후 반환

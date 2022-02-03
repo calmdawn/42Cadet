@@ -27,3 +27,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+
+// memchr함수는 처음부터 ~ n까지 중에서 문자(c)를 찾아 반환하는 함수

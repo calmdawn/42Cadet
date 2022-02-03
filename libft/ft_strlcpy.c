@@ -32,3 +32,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		dst[idx] = '\0';
 	return (len);
 }
+
+// ft_strlcpy : src에서 dst로 값을 size길이 만큼 복사.	src 길이 반환

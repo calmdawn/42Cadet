@@ -29,3 +29,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+// ft_memcmp 함수는 두 메모리 블록을 n까지 비교하여 전부 같다면 0, 아니면 다른 값을 반환

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:09:52 by jucho             #+#    #+#             */
-/*   Updated: 2022/02/02 03:28:29 by jucho            ###   ########.fr       */
+/*   Updated: 2022/02/03 16:40:17 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		ft_memcpy(str, &s[start], size);
 	return (str);
 }
+
+// ft_substr : s의 start부터 len까지 문자열을 자르는 함수.
