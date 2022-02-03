@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 04:10:34 by jucho             #+#    #+#             */
-/*   Updated: 2022/02/03 16:40:11 by jucho            ###   ########.fr       */
+/*   Updated: 2022/02/02 04:16:11 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,8 +78,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	make_str(str, start, end, s1);
 	return (str);
 }
-
-/* ft_strtrim :
-	 s1의 좌측에서 set이 아닌 문자가 나오지 않는 부분부터
-	 s1의 우측에서 set이 아닌 문자가 나오지 않는 부분까지 문자열을 자르는 함수
-*/

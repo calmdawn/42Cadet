@@ -32,5 +32,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-// ft_memcpy dst 에 src를 n 만큼 복사한 후 반환

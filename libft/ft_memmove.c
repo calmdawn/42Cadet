@@ -35,5 +35,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-// ft_memmove : dst 에 src를 n 만큼 복사한 후 반환. memcpy와 다르게 중첩방지함

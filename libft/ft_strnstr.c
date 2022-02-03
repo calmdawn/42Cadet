@@ -35,5 +35,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-// ft_strnstr : haystack의 len번째 까지의 문자열 중에 needle문자열이 있는지 탐색하는 함수

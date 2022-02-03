@@ -33,5 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + idx] = '\0';
 	return (src_len + dst_len);
 }
-
-// ft_strlcat : dst에 src 문자열을 dstsize 또는 src가 끝날때까지 이어 붙이는 함수. 조건에 따른 dest + src 길이 반환
