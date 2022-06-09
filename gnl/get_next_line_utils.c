@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 01:17:33 by jucho             #+#    #+#             */
-/*   Updated: 2022/06/09 04:10:23 by jucho            ###   ########.fr       */
+/*   Updated: 2022/06/09 20:18:58 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ size_t	ft_strlen(const char *str)
 	return (cnt);
 }
 
+//* 문자 c가 존재하면 해당 문자가 존재하는 곳의 포인터를 반환, 존재하지 않으면 NULL을 반환하는 함수.
 char	*ft_strchr(const char *str, int c)
 {
 	if (str == NULL)
@@ -37,6 +38,7 @@ char	*ft_strchr(const char *str, int c)
 	return (0);
 }
 
+//포인터s가 가리키는 문자열을 복사하고, 복사된 문자열에 대한 포인터를 반환
 char	*ft_strdup(const char *s1)
 {
 	char	*str;
@@ -57,6 +59,7 @@ char	*ft_strdup(const char *s1)
 	return (str);
 }
 
+//원본 문자열 s에서 start에서부터 len만큼의 길이의 하위 문자열을 하나 만들어서 반환
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
@@ -80,6 +83,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
+//s1 문자열과 s2 문자열을 이어붙인 문자열을 복사하여 반환하는 함수
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;

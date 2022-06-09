@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jucho <jucho@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: jucho <jucho@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/09 01:16:54 by jucho             #+#    #+#             */
-/*   Updated: 2022/06/09 04:50:05 by jucho            ###   ########.fr       */
+/*   Created: 2022/06/09 15:51:20 by jucho             #+#    #+#             */
+/*   Updated: 2022/06/09 20:18:40 by jucho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static void	all_free(char **strings)
 {
-		free(*strings);
-		*strings = NULL;
+	free(*strings);
+	*strings = NULL;
 }
 
 static char	*get_string(char **strings)
@@ -25,14 +25,15 @@ static char	*get_string(char **strings)
 	int		idx1;
 
 	idx1 = 0;
-	if (strings == NULL){
+	if (strings == NULL)
+	{
 		all_free(strings);
 		return (NULL);
 	}
 	while ((*strings)[idx1] && (*strings)[idx1] != '\n')
 		idx1++;
 	line = ft_substr(*strings, 0, idx1 + 1);
-	pre_backup = ft_substr(*strings, idx1 + 1, ft_strlen(*strings) - idx1);
+	pre_backup = ft_substr(*strings, idx1 + 1, ft_strlen(*strings) - idx1 + 1);
 	free(*strings);
 	*strings = pre_backup;
 	return (line);
@@ -52,7 +53,7 @@ static char	*read_input(int fd, char *strings, char *line)
 			free(line);
 			return (NULL);
 		}
-		line[byte_read] = 0;
+		line[byte_read] = '\0';
 		if (strings == NULL)
 			temp = ft_strdup(line);
 		else
